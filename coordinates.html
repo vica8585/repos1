@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #coordinates {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var coordinates = document.getElementById("coordinates");
+        coordinates.onmousemove = func;
+        function func(event){
+            this.innerText = "X:" + event.clientX + "Y:" + event.clientY;
+        }
+    </script>
+    <div id="coordinates">text</div>
+</body>
+</html>
